@@ -16,6 +16,7 @@ body {
 }
 
 h2 {
+  color: #353738;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.6rem;
@@ -24,16 +25,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.text {
-  text-align: justify;
-  width: 80%
+h3 {
+  color: #353738;
+  display: inline;
 }
 
 hr {
-  border: 1;
-  width: 50px;
-  height: 1px
+  border: 10;
   border-color: #f7f7f7;
+  width: 50px;
+  height: 50px
   align: center;
 }
 
@@ -42,16 +43,40 @@ ul {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-}
-
 li {
   list-style-type: none;
   display: inline-block;
   margin-right: 2rem;
   font-family: Arial;
   padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  justify-items: center;
+}
+
+.text {
+  text-align: justify;
+  width: 80%
+}
+
+.twittime {
+  display: inline;
+  letter-spacing: 2px;
+}
+
+.icbl {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .backgroundimg {
@@ -68,11 +93,6 @@ li {
   justify-content: center;
 }
 
-.headerblock {
-  color: white;
-  text-align: center;
-}
-
 .newgen {
   text-align: center;
   background-color: #f7f7f7;
@@ -86,7 +106,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   align-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .index {
@@ -175,6 +195,46 @@ li {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.bikelink {
+  text-align: center;
+}
+/* Hover over the picture - opacity of pic decrease */
+.hovim:hover #shoppicsix {
+  opacity: 0.5;
+}
+
+/* Hover over the picture - green box */
+.hovim:hover {
+  background-color: green;
+  backface-visibility: visible;
+  opacity: 0.5;
+}
+
+/* Hover over the picture - opacity of pic decrease */
+.hovim:hover  {
+  opacity: 0.5;
+}
+
+/* Hover over the bike-icon and it shows up */
+.bikelink:hover #shape {
+  opacity: 1;
+}
+/* Hover over the shop-label and it shows up*/
+.bikelink:hover #shoplab {
+  opacity: 1;
+}
+
+/* Hover over the pic and the bike-icon shows up*/
+.hovim:hover~.bikelink #shape {
+  opacity: 1;
+}
+
+/* Hover over the pic and the shop-label shows up*/
+.hovim:hover~.bikelink #shoplab {
+  opacity: 1;
+}
+
+
 .shop-item1 {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
@@ -236,14 +296,6 @@ li {
   font-size: 32px;
 }
 
-footer {
-  background-color: #f7f7f7;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  align-items: center;
-  justify-items: center;
-}
-
 .fitem1 {
   grid-column: 1 / span 1;
   align-self: center;
@@ -267,6 +319,25 @@ footer {
   grid-column: 3 / span 1;
   display: flex;
   flex-flow: row;
+}
+
+#shape {
+  justify-content: center;
+  opacity: 0;
+}
+
+#shoplab {
+  opacity: 0;
+  font-family: "Lato", sans-serif;
+  margin-top: -1rem;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#shoppicsix {
+}
+
 }
 
 #yebo {
