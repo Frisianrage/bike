@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700");
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -62,6 +61,12 @@ footer {
   align-items: center;
   justify-items: center;
 }
+@media screen and (max-width: 600px) {
+          footer {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+          }
+}
 
 .text {
   text-align: justify;
@@ -120,6 +125,13 @@ footer {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 1fr);
 }
+@media screen and (max-width: 600px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+    }
+}
 
 .pic {
   display: block;
@@ -132,19 +144,39 @@ footer {
   grid-column: 1 / span 4;
   grid-row: 1 / span 3;
 }
+@media screen and (max-width: 600px) {
+.grid-item1 {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 3;
+          }
+}
 
 .grid-item2 {
   grid-column: 5 / span 2;
   grid-row: 1 / span 2;
   text-align: center;
   align-self: center;
-
+}
+@media screen and (max-width: 600px) {
+  .grid-item2 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 2;
+            text-align: center;
+            align-self: center;
+          }
 }
 
 .grid-item3 {
   grid-column: 5 / span 2;
   grid-row: 3 / span 1;
   justify-self: stretch;
+}
+@media screen and (max-width: 600px) {
+          .grid-item3 {
+            grid-column: 1 / span 1;
+            grid-row: 6 / span 1;
+            justify-self: stretch;
+          }
 }
 
 .grid-item4 {
@@ -153,22 +185,50 @@ footer {
   text-align: center;
   align-self: center;
 }
+@media screen and (max-width: 600px) {
+          .grid-item4 {
+            grid-column: 2 / span 1;
+            grid-row: 5 / span 2;
+            text-align: center;
+            align-self: center;
+          }
+}
 
 .grid-item5 {
   grid-column: 1 / span 2;
   grid-row: 6 / span 1;
   justify-self: stretch;
 }
+@media screen and (max-width: 600px) {
+          .grid-item5 {
+            grid-column: 2 / span 1;
+            grid-row: 4 / span 1;
+            justify-self: stretch;
+          }
+}
 
 .grid-item6 {
   grid-column: 3 / span 4;
   grid-row: 4 / span 3;
+}
+@media screen and (max-width: 600px) {
+          .grid-item6 {
+            grid-column: 1 / span 2;
+            grid-row: 7 / span 3;
+          }
 }
 
 .grid-item7 {
   grid-column: 1 / span 2;
   grid-row: 7 / span 3;
   justify-self: stretch;
+}
+@media screen and (max-width: 600px) {
+          .grid-item7 {
+            grid-column: 2 / span 1;
+            grid-row: 10 / span 3;
+            justify-self: stretch;
+          }
 }
 
 .grid-item8 {
@@ -177,22 +237,49 @@ footer {
   text-align: center;
   align-self: center;
 }
+@media screen and (max-width: 600px) {
+          .grid-item8 {
+            grid-column: 1 / span 1;
+            grid-row: 10 / span 2;
+            text-align: center;
+            align-self: center;
+          }
+}
 
 .grid-item9 {
   grid-column: 3 / span 2;
   grid-row: 9 / span 1;
   justify-self: stretch;
 }
+@media screen and (max-width: 600px) {
+          .grid-item9 {
+            grid-column: 1 / span 1;
+            grid-row: 12 / span 1;
+            justify-self: stretch;
+          }
+}
 
 .grid-item10 {
   grid-column: 5 / span 2;
   grid-row: 7 / span 3;
+}
+@media screen and (max-width: 600px) {
+          .grid-item10 {
+            display: none;
+          }
 }
 
 .shopcontainer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+@media screen and (max-width: 600px) {
+          .shopcontainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 1fr)
+          }
 }
 
 .bikelink {
@@ -239,33 +326,85 @@ footer {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
+@media screen and (max-width: 600px) {
+          .shop-item1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+          }
+}
+
 .shop-item2 {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+}
+@media screen and (max-width: 600px) {
+          .shop-item2 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+          }
 }
 .shop-item3 {
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;
 }
+@media screen and (max-width: 600px) {
+          .shop-item3 {
+            grid-column: 1 / span 2;
+            grid-row: 7 / span 2;
+          }
+}
 .shop-item4 {
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
 }
+@media screen and (max-width: 600px) {
+          .shop-item4 {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 2;
+          }
+}
+
 .shop-item5 {
   grid-column: 4 / span 1;
   grid-row: 1 / span 2;
 }
+@media screen and (max-width: 600px) {
+          .shop-item5 {
+            grid-column: 1 / span 1;
+            grid-row: 5 / span 2;
+          }
+}
+
 .shop-item6 {
   grid-column: 5 / span 2;
   grid-row: 1 / span 1;
 }
+@media screen and (max-width: 600px) {
+          .shop-item6 {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+          }
+}
+
 .shop-item7 {
   grid-column: 5 / span 1;
   grid-row: 2 / span 1;
 }
+@media screen and (max-width: 600px) {
+          .shop-item7 {
+            grid-column: 2 / span 1;
+            grid-row: 5 / span 1;
+          }
+}
 .shop-item8 {
   grid-column: 6 / span 1;
   grid-row: 2 / span 1;
+}
+@media screen and (max-width: 600px) {
+          .shop-item8 {
+            grid-column: 2 / span 1;
+            grid-row: 6 / span 1;
+          }
 }
 
 .orderblock {
@@ -305,6 +444,12 @@ footer {
   font-weight: bold;
   margin-bottom: -1rem;
 }
+@media screen and (max-width: 600px) {
+          .fitem1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+          }
+}
 
 .fitem2 {
   grid-column: 2 / span 1;
@@ -314,11 +459,23 @@ footer {
 .mediaicon {
   padding: 1rem;
 }
+@media screen and (max-width: 600px) {
+          .fitem2 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+          }
+}
 
 .fitem3 {
   grid-column: 3 / span 1;
   display: flex;
   flex-flow: row;
+}
+@media screen and (max-width: 600px) {
+          .fitem3 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+          }
 }
 
 #shape {
@@ -333,11 +490,6 @@ footer {
   color: white;
   letter-spacing: 2px;
   font-weight: bold;
-}
-
-#shoppicsix {
-}
-
 }
 
 #yebo {
