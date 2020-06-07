@@ -49,6 +49,11 @@ li {
   font-family: Arial;
   padding-right: 2rem;
 }
+@media screen and (max-width: 600px) {
+          .listitem {
+          display: none;
+          }
+}
 
 a {
   text-decoration: none;
